@@ -1,0 +1,34 @@
+﻿@model List <Kentico.Models.Home.DoctorlarViewModel>
+
+
+@{
+    ViewBag.Title = "Index";
+}
+@*<h1>@Model.FirstName</h1>
+<h1>@Model.LastName</h1>
+<h1>@Model.Degree</h1>
+<h1>@Model.Speciality</h1>*@
+
+
+@foreach (var item in Model)
+{
+    <tr>
+        <td>
+            @item.FirstName
+        </td>
+        <td>
+            @item.LastName
+        </td>
+        <td>
+            @item.Degree
+        </td>
+        <td>
+            @item.Speciality
+        </td>
+
+
+
+    </tr>
+}
+
+

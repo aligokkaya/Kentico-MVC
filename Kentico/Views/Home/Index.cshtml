@@ -1,0 +1,18 @@
+﻿@using Kentico.Models.Home
+@model HomeViewModel
+
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<h1>@Model.Title</h1>
+
+<p>@Model.Name  </p>
+<p>@Html.Raw(Model.Text)</p>
+
+@* See ~/App_Start/ApplicationConfig.cs, ~/Controllers/HomeController.cs and ~/Views/Shared/_Layout.cshtml
+   Uncomment the following lines to insert a Page builder editable area *@
+@*<div>
+        @Html.Kentico().EditableArea("main")
+</div>*@
